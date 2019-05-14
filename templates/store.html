@@ -12,20 +12,20 @@
  		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
 
  		<!-- Bootstrap -->
- 		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+ 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}"/>
 
  		<!-- Slick -->
- 		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
- 		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+ 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/slick.css')}}"/>
+ 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/slick-theme.css')}}"/>
 
  		<!-- nouislider -->
- 		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+ 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/nouislider.min.css')}}"/>
 
  		<!-- Font Awesome Icon -->
- 		<link rel="stylesheet" href="css/font-awesome.min.css">
+ 		<link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css')}}">
 
  		<!-- Custom stlylesheet -->
- 		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+ 		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"/>
 
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,12 +43,12 @@
 				<div class="container">
 					<ul class="header-links pull-left">
 						<li><a href="#"><i class="fa fa-phone"></i> +021-95-51-84</a></li>
-						<li><a href="#"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> mercadertaliban@email.com</a></li>
 						<li><a href="#"><i class="fa fa-map-marker"></i> 1734 Stonecoal Road</a></li>
 					</ul>
 					<ul class="header-links pull-right">
-						<li><a href="#"><i class="fa fa-dollar"></i> USD</a></li>
-						<li><a href="#"><i class="fa fa-user-o"></i> My Account</a></li>
+						<li><a href="#"><i class="fa fa-dollar"></i> POS</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Mi Cuenta</a></li>
 					</ul>
 				</div>
 			</div>
@@ -64,7 +64,7 @@
 						<div class="col-md-3">
 							<div class="header-logo">
 								<a href="#" class="logo">
-									<img src="./img/logo.png" alt="">
+									<img src="{{ url_for('static', filename='img/logo.PNG')}}" alt="">
 								</a>
 							</div>
 						</div>
@@ -110,7 +110,7 @@
 										<div class="cart-list">
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product01.png" alt="">
+													<img src="{{ url_for('static', filename='img/product01.PNG')}}" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -121,7 +121,7 @@
 
 											<div class="product-widget">
 												<div class="product-img">
-													<img src="./img/product02.png" alt="">
+													<img src="{{ url_for('static', filename='img/product02.PNG')}}" alt="">
 												</div>
 												<div class="product-body">
 													<h3 class="product-name"><a href="#">product name goes here</a></h3>
@@ -358,7 +358,7 @@
 							<h3 class="aside-title">Top selling</h3>
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="./img/product01.png" alt="">
+									<img src="{{ url_for('static', filename='img/product01.PNG')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -369,7 +369,7 @@
 
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="./img/product02.png" alt="">
+									<img src="{{ url_for('static', filename='img/product02.PNG')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -380,7 +380,7 @@
 
 							<div class="product-widget">
 								<div class="product-img">
-									<img src="./img/product03.png" alt="">
+									<img src="{{ url_for('static', filename='img/product03.PNG')}}" alt="">
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
@@ -427,7 +427,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product01.png" alt="">
+										<img src="{{ url_for('static', filename='img/product01.PNG')}}" alt="">
 										<div class="product-label">
 											<span class="sale">-30%</span>
 											<span class="new">NEW</span>
@@ -461,7 +461,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product02.png" alt="">
+										<img src="{{ url_for('static', filename='img/product01.PNG')}}" alt="">
 										<div class="product-label">
 											<span class="new">NEW</span>
 										</div>
@@ -496,7 +496,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product03.png" alt="">
+										<img src="{{ url_for('static', filename='img/product03.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -523,7 +523,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product04.png" alt="">
+										<img src="{{ url_for('static', filename='img/product04.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -550,7 +550,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product05.png" alt="">
+										<img src="{{ url_for('static', filename='img/product05.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -575,7 +575,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product06.png" alt="">
+										<img src="{{ url_for('static', filename='img/product06.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -607,7 +607,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product07.png" alt="">
+										<img src="{{ url_for('static', filename='img/product07.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -637,7 +637,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product08.png" alt="">
+										<img src="{{ url_for('static', filename='img/product08.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -664,7 +664,7 @@
 							<div class="col-md-4 col-xs-6">
 								<div class="product">
 									<div class="product-img">
-										<img src="./img/product09.png" alt="">
+										<img src="{{ url_for('static', filename='img/product09.PNG')}}" alt="">
 									</div>
 									<div class="product-body">
 										<p class="product-category">Category</p>
@@ -841,12 +841,13 @@
 		<!-- /FOOTER -->
 
 		<!-- jQuery Plugins -->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/slick.min.js"></script>
-		<script src="js/nouislider.min.js"></script>
-		<script src="js/jquery.zoom.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="{{ url_for('static', filename='js/jquery.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/slick.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/nouislider.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.zoom.min.js')}}"></script>
+		<script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
 
 	</body>
 </html>
