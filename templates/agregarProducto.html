@@ -212,28 +212,30 @@
 				<!-- row -->
 				<div class="row">
 
-						<form action="/agregarProducto" method="POST" >
-							<div class="form-group">
-									<input type="text" class="form-control" name="nombre" placeholder="Nombre Producto">
-							</div>
-							<div class="form-group">
-									<input type="number" class="form-control" name="precio" placeholder="Precio Producto">
-							</div>
-							<div class="form-group">
-									<placeholder>Descripcion Producto</placeholder>
-									<textarea class="form-control" name="descripcion" rows="3"></textarea>
-							</div>
-							<div class="form-group">
-									<input type="text" class="form-control" name="imagen" placeholder="URL Imagen">
-							</div>
-		
-							<button type="submit" class="btn btn-success">
-									Agregar
-							</button>
-					
-					</form>
+					<div class="wrapper">
+						<h2>Registrar Producto</h2>	
+						<form action="/agregarProducto" method="POST">
 
-				</div>
+							<div class="input-field">
+								<input type="text" name="nombre" required>
+								<label>Nombre</label>
+							</div>
+							<div class="input-field">
+									<input type="text" name="precio" required>
+									<label>Precio</label>
+							</div>
+							<div class="input-field">
+									<textarea name="descripcion" rows="3"></textarea>
+										<label>Descripcion</label>
+							</div>
+							<div class="input-field">
+									<input type="text" name="imagen" required>
+									<label>ULR Imagen</label>
+							</div>
+
+							<input type="submit" value="Enviar" class="btn">
+						</form>
+					</div>
 				<!-- /row -->
 			</div>
 			<!-- /container -->

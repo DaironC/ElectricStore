@@ -2002,6 +2002,7 @@ textarea.input {
 ===========================================================*/
 
 #footer {
+  margin-top: 25px;
   background: #15161D;
   color: #B9BABC;
 }
@@ -2187,4 +2188,87 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+
+/* codigo css para formulario de agregar y actualizar */
+
+.wrapper{
+
+  
+  left: 50%;
+  height: 600px;
+  width: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #FFF;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+}
+
+.wrapper h2{
+
+  color: #666;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 30px;
+}
+
+.input-field{
+  position: relative;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.input-field input,
+.input-field textarea{
+ width: 100%;
+ padding: 5px 0;
+ box-sizing: border-box;
+ background: transparent;
+ border: none;
+ outline: none;
+ border-bottom: 2px solid #666;
+ font-size: 16px;
+ color: #666;
+ font-weight: 700;
+ resize: none;
+}
+
+.input-field label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  pointer-events: none;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.input-field input:focus + label,
+.input-field textarea:focus + label,
+.input-field input:valid + label,
+.input-field textarea:valid + label{
+  top: -25px;
+  font-size: 14px;
+  padding: 2px 5px;
+  background: #FF006a;
+  color: #FFF;
+  border-radius: 4px;
+}
+
+.btn{
+  margin-top: 20px;
+  background: #ff006a;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: 0.5s;
+  float: right;
+}
+
+.btn:hover{
+  background: #6b3aff;
 }
