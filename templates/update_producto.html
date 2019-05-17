@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+		<!-- SECTION -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+
+					<div class="wrapper">
+						<h2>Registrar Producto</h2> 
+                        <form action="/update_producto/{{producto.0}}" method="POST">
+
+                            <div class="input-field">
+                                <input type="text" name="nombre" value ="{{producto.1}}" required>
+                                <label>Nombre</label>
+                            </div>
+                            <div class="input-field">
+                                    <input type="text" name="precio" value ="{{producto.2}}" required>
+                                    <label>Precio</label>
+                            </div>
+                            <div class="input-field">
+                                    <textarea name="descripcion" rows="1" value ="{{producto.3}}"></textarea>
+                                        <label>Descripcion</label>
+                            </div>
+                            <div class="input-field">
+                                    <input type="text" name="imagen" value ="{{producto.4}}" required>
+                                    <label>ULR Imagen</label>
+                            </div>
+
+                            <input type="submit" value="Enviar" class="btn">
+                        </form>
+					</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /SECTION -->
+{% endblock %}
+		

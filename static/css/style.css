@@ -1040,8 +1040,8 @@ textarea.input {
 .product .add-to-cart .add-to-cart-btn {
   position: relative;
   border: 2px solid transparent;
-  height: 40px;
-  padding: 0 30px;
+  height: 12px;
+  padding: 0 10px;
   background-color: #ef233c;
   color: #FFF;
   text-transform: uppercase;
@@ -2258,14 +2258,14 @@ textarea.input {
 }
 
 .btn{
-  margin-top: 20px;
+  margin-top: 15px;
   background: #ff006a;
   color: #fff;
-  padding: 15px 30px;
+  padding: 5px 10px;
   border: none;
   outline: none;
   border-radius: 30px;
-  font-size: 16px;
+  font-size: 12px;
   transition: 0.5s;
   float: right;
 }
